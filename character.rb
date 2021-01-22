@@ -1,7 +1,7 @@
-class character
+class Character
 
-  attr_reader :name, :offense, :defense,
   attr_accessor :hp
+  attr_reader :name, :offense, :defense,
 
   def initialize (name:, hp:, offense:, defense: )
     @name = name
@@ -12,5 +12,3 @@ class character
 
 end
 
-
-brave = character.new(name: "ゆうしゃ", hp: 238, offense: 203, defense: 129)
