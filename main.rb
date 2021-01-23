@@ -17,3 +17,9 @@ while brave.hp > 0 && monster.hp >0 do
         *=*=*=*=*=*=*=*=*=*=*
        TEXT
 end
+
+if monster.hp = 0
+  puts "#{monster.name}をやっつけた"
+elsif
+  puts "#{brave.name}は死んでしまった。"
+end
