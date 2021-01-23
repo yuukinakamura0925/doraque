@@ -1,8 +1,9 @@
-class Brave < character
+class Brave < Character
   def attack(monster)
-    damege = (offense - monster.deffense)/2
-    monster.hp = monster.hp - damege
-    puts "勇者の攻撃"
-    puts "#{monster.name}に#{damege}のダメージを与えた"
+    damage = (offense - monster.deffense)/2
+    monster.hp = monster.hp - damage
+      monster.hp = 0 if monster.hp < 0
+    puts "#{name}の攻撃！"
+    puts "#{monster.name}に#{damage}のダメージを与えた"
   end
 end
