@@ -9,7 +9,7 @@ puts "#{monster.name}が現れた"
 
 while brave.hp > 0 && monster.hp >0 do
   brave.attack(monster)
-  monster.attack(brave) if monster.hp = 0 
+  monster.attack(brave) if monster.hp > 0 
   puts <<~TEXT
         *=*=*=*=*=*=*=*=*=*=*
         【ゆうしゃ】HP: #{brave.hp}
